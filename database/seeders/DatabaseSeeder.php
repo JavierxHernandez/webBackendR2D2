@@ -19,8 +19,9 @@ class DatabaseSeeder extends Seeder
             ImagesTypesSeeder::class,
             ProductsSeeder::class,
             ProvidersSeeder::class,
-            DescriptionsSeeder::class
-            ProductsProvidersSeeder::class
+            DescriptionsSeeder::class,
+            ProductsProvidersSeeder::class,
+            ButtonsSeeder::class
         ]);
     }
 }
