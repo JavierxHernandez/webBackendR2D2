@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SectionLanding extends Model
 {
     use HasFactory;
+
+    protected $table = "sections_landings";
 }

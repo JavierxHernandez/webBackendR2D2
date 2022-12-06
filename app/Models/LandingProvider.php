@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class LandingProvider extends Model
 {
     use HasFactory;
+
+    protected $table = "landings_providers";
 }
