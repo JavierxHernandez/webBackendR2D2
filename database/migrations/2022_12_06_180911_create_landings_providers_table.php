@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('landings_providers', function (Blueprint $table) {
             $table->id();
-            $table->foreign('landing_id')->references('id')->on('landings');
-            $table->foreign('product_provider_id')->references('id')->on('products_providers');
+            $table->foreignId('landing_id')->constrained();
+            $table->foreignId('products_provider_id')->constrained();
             $table->string('url')->nullable();
             $table->timestamps();
         });

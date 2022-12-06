@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('products_providers', function (Blueprint $table) {
             $table->id();
-            $table->foreign('provider_id')->references('id')->on('providers');
-            $table->foreign('product_id')->references('id')->on('providers');
+            $table->foreignId('provider_id')->constrained();
+            $table->foreignId('product_id')->constrained();
             $table->string('term_and_condition_url');
             $table->string('subscription_url');
             $table->timestamps();
