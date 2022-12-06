@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\ImagesTypes;
+use App\Models\ImageType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('path');
             $table->string('description', 75)->nullable();
-            $table->foreignIdFor(ImagesTypes::class)->constrained('images_types');
+            $table->foreignIdFor(ImageType::class)->constrained('images_types');
             $table->timestamps();
         });
     }

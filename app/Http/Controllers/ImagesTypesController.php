@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ImagesTypes;
+use App\Models\ImageType;
 use Illuminate\Http\Request;
 
 class ImagesTypesController extends Controller
@@ -31,10 +31,10 @@ class ImagesTypesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\ImagesTypes  $imagesTypes
+     * @param  \App\Models\ImageType  $imagesTypes
      * @return \Illuminate\Http\Response
      */
-    public function show(ImagesTypes $imagesTypes)
+    public function show(ImageType $imagesTypes)
     {
         //
     }
@@ -43,10 +43,10 @@ class ImagesTypesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\ImagesTypes  $imagesTypes
+     * @param  \App\Models\ImageType  $imagesTypes
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ImagesTypes $imagesTypes)
+    public function update(Request $request, ImageType $imagesTypes)
     {
         //
     }
@@ -54,10 +54,10 @@ class ImagesTypesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\ImagesTypes  $imagesTypes
+     * @param  \App\Models\ImageType  $imagesTypes
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ImagesTypes $imagesTypes)
+    public function destroy(ImageType $imagesTypes)
     {
         //
     }
