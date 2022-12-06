@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
             DescriptionsSeeder::class,
             ProductsProvidersSeeder::class,
             ButtonsSeeder::class,
+            SubtitlesButonsSeeder::class,
             LandingsSeeder::class,
         ]);
     }
