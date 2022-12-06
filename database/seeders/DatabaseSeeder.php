@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             TitlesSeeder::class,
             ImagesTypesSeeder::class,
             ProductsSeeder::class,
+            ProvidersSeeder::class,
         ]);
     }
 }
