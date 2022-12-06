@@ -18,8 +18,9 @@ class LandingsSeeder extends Seeder
         $landings = [
             [
                 'description' => 'Landing 2.0 para mexico.',
-                'footer' => 'Con tu suscripción tendrás acceso a  juegos y videos de realidad virtual y aumentada de manera ilimitada.'],
+                'footer_text' => 'Con tu suscripción tendrás acceso a  juegos y videos de realidad virtual y aumentada de manera ilimitada.',
                 'number_of_sections' => 3,
+            ]
         ];
 
         SeederFunction::seed(Landing::class, $landings);
