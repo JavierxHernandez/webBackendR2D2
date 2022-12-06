@@ -21,6 +21,6 @@ class TitlesSeeder extends Seeder
             ['title_1' => 'El mejor contenido', 'title_2' => 'en la palma de tu mano'],
         ];
 
-        SeederFunction::seed(new Title, $titles);
+        SeederFunction::seed(Title::class, $titles);
     }
 }
