@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LandingSection;
+use App\Models\ImageSection;
 use Illuminate\Http\Request;
 
-class LandingsSectionsController extends Controller
+class ImagesSectionsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class LandingsSectionsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\LandingSection  $landingSection
+     * @param  \App\Models\ImageSection  $imageSection
      * @return \Illuminate\Http\Response
      */
-    public function show(LandingSection $landingSection)
+    public function show(ImageSection $imageSection)
     {
         //
     }
@@ -43,10 +43,10 @@ class LandingsSectionsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\LandingSection  $landingSection
+     * @param  \App\Models\ImageSection  $imageSection
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, LandingSection $landingSection)
+    public function update(Request $request, ImageSection $imageSection)
     {
         //
     }
@@ -54,10 +54,10 @@ class LandingsSectionsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\LandingSection  $landingSection
+     * @param  \App\Models\ImageSection  $imageSection
      * @return \Illuminate\Http\Response
      */
-    public function destroy(LandingSection $landingSection)
+    public function destroy(ImageSection $imageSection)
     {
         //
     }
