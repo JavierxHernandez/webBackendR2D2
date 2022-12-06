@@ -18,7 +18,7 @@ return new class extends Migration
         Schema::create('sections_landigs', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Landing::class)->constrained('landings');
-            $table->foreignIdFor(LandingSection::class)->constrained('landings_sections');
+            $table->foreignIdFor(Section::class)->constrained('sections');
             $table->integer('order_namber', false, true)->nullable();
             $table->timestamps();
             $table->softDeletes();

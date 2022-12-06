@@ -18,7 +18,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('landings_sections', function (Blueprint $table) {
+        Schema::create('sections', function (Blueprint $table) {
             $table->id();
             $table->foreignIdFor(Description::class)->constrained('descriptions');
             $table->foreignIdFor(Title::class)->constrained('titles');
