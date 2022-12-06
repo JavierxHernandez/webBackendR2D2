@@ -20,11 +20,11 @@ return new class extends Migration
     {
         Schema::create('landings_sections', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Description::class);
-            $table->foreignIdFor(Title::class);
-            $table->foreignIdFor(TypeSectionLanding::class);
-            $table->foreignIdFor(Button::class);
-            $table->foreignIdFor(SubTitleButton::class);
+            $table->foreignId(Description::class)->constrained('descriptions');
+            $table->foreignId(Title::class)->constrained('titles');
+            $table->foreignId(TypeSectionLanding::class)->constrained('types_sections_landings');
+            $table->foreignId(Button::class)->constrained('buttons');
+            $table->foreignId(SubTitleButton::class)->constrained('subtitles_buttons');
             $table->string('background_color', 20);
             $table->timestamps();
             $table->softDeletes();

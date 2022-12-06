@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('butons', function (Blueprint $table) {
+        Schema::create('buttons', function (Blueprint $table) {
             $table->id();
             $table->string('text', 100);
             $table->string('action', 250);

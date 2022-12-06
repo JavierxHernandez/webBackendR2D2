@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('subtitles_butons', function (Blueprint $table) {
+        Schema::create('subtitles_buttons', function (Blueprint $table) {
             $table->id();
             $table->string('text', 100);
             $table->timestamps();
