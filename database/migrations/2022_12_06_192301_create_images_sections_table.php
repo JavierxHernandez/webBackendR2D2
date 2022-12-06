@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\Image;
-use App\Models\Sections;
+use App\Models\Section;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,7 +17,7 @@ return new class extends Migration
     {
         Schema::create('images_sections', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Sections::class)->constrained('sections');
+            $table->foreignIdFor(Section::class)->constrained('sections');
             $table->foreignIdFor(Image::class)->constrained('images');
             $table->timestamps();
             $table->softDeletes();
