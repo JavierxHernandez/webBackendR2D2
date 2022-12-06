@@ -12,6 +12,7 @@ class SeederFunction
     public static function seed($model, $array)
     {
         foreach ($array as $item) {
+            $model = new $model;
             $model->fill($item);
             if (!$model->save()) {
                 $name = get_class($model);
