@@ -21,7 +21,8 @@ class DatabaseSeeder extends Seeder
             ProvidersSeeder::class,
             DescriptionsSeeder::class,
             ProductsProvidersSeeder::class,
-            ButtonsSeeder::class
+            ButtonsSeeder::class,
+            LandingsSeeder::class,
         ]);
     }
 }
