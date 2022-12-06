@@ -25,7 +25,8 @@ class DatabaseSeeder extends Seeder
             SubtitlesButonsSeeder::class,
             LandingsSeeder::class,
             LandingsProvidersSeeder::class,
-            TypesSectionsLandingsSeeder::class
+            TypesSectionsLandingsSeeder::class,
+            ImagesSeeders::class
         ]);
     }
 }
