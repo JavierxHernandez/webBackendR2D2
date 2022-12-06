@@ -22,8 +22,10 @@ class ImagesTypesSeeder extends Seeder
             ['name' => 'thumbnail_mobile'],
             ['name' => 'background_mobile'],
             ['name' => 'avatar'],
-            ['name' => 'datail'],
-            ['name' => 'datail_mobile'],
+            ['name' => 'detail'],
+            ['name' => 'detail_mobile'],
+            ['name' => 'principal'],
+            ['name' => 'logo'],
         ];
 
         SeederFunction::seed(ImagesTypes::class, $types);
