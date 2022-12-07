@@ -10,8 +10,7 @@ final class Response
     /**
      * @throws Exception
      */
-    public static function successful(array $data, ?SuccessfulMessage $message = null, int $statusCode = 200)
-    :JsonResponse
+    public static function successful(array $data, ?SuccessfulMessage $message = null, int $statusCode = 200): JsonResponse
     {
         if ($statusCode > 208) {
             throw new Exception("Status code out of range");
@@ -23,7 +22,7 @@ final class Response
     /**
      * @throws Exception
      */
-    public static function error(SuccessfulMessage $message = null, int $statusCode = 200): JsonResponse
+    public static function error(ErrorMessage $message = null, int $statusCode = 500): JsonResponse
     {
         if ($statusCode < 400) {
             throw new Exception("Status code out of range");
@@ -34,7 +33,7 @@ final class Response
 
     private static function getResponse(array $data, ?SuccessfulMessage $message, int $statusCode): JsonResponse
     {
-        $objetMessage = $message ? [ 'message' => $message->toJson() ] : [];
+        $objetMessage = $message ? ['message' => $message->toJson()] : [];
         $response = array_merge($data, $objetMessage);
 
         return response()->json($response, $statusCode);
