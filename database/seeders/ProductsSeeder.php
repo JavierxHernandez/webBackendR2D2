@@ -16,8 +16,8 @@ class ProductsSeeder extends Seeder
     public function run()
     {
         $products = [
-            ['name' => 'planeta guru', 'url' => 'https://planeta.guru/'],
-            ['name' => 'clarovr', 'url' => 'https://clarovr.com/'],
+            ['name' => 'planeta guru', 'url' => 'https://planeta.guru/', 'image_id' => 4],
+            ['name' => 'clarovr', 'url' => 'https://clarovr.com/', 'image_id' => 4],
         ];
 
         SeederFunction::seed(Product::class, $products);

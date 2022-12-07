@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             TitlesSeeder::class,
             ImagesTypesSeeder::class,
+            ImagesSeeders::class,
             ProductsSeeder::class,
             ProvidersSeeder::class,
             DescriptionsSeeder::class,
@@ -26,7 +27,6 @@ class DatabaseSeeder extends Seeder
             LandingsSeeder::class,
             LandingsProvidersSeeder::class,
             TypesSectionsLandingsSeeder::class,
-            ImagesSeeders::class,
             SectionsSeeder::class,
             ImagesSectionsSeeder::class,
             SectionsLandingsSeeder::class
