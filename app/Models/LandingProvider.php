@@ -32,6 +32,11 @@ class LandingProvider extends Model
 
     public function productProvider(): BelongsTo
     {
-        return $this->belongsTo(ProductProvider::class);
+        return $this->belongsTo(ProductProvider::class)->with(
+            [
+                'product.image',
+                'provider',
+            ]
+        );
     }
 }

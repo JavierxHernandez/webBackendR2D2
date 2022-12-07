@@ -41,6 +41,7 @@ class LandingsProvidersController extends Controller
     {
         try {
             $landingProvider->fullLanding;
+            $landingProvider->productProvider;
             return Response::successful(['landing' => $landingProvider]);
         } catch (Exception $e) {
             $message = new ErrorMessage($e->getMessage(), 'NOT_OBTAINED');
