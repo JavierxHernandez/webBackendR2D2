@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\ImagesTypes;
+use App\Models\ImageType;
 use App\Auxs\SeederFunction;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -28,6 +28,6 @@ class ImagesTypesSeeder extends Seeder
             ['name' => 'logo'],
         ];
 
-        SeederFunction::seed(ImagesTypes::class, $types);
+        SeederFunction::seed(ImageType::class, $types);
     }
 }
