@@ -28,7 +28,8 @@ class DatabaseSeeder extends Seeder
             TypesSectionsLandingsSeeder::class,
             ImagesSeeders::class,
             SectionsSeeder::class,
-            ImagesSectionsSeeder::class
+            ImagesSectionsSeeder::class,
+            SectionsLandingsSeeder::class
         ]);
     }
 }
