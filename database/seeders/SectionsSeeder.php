@@ -20,26 +20,26 @@ class SectionsSeeder extends Seeder
             [
                 'description_id' => 1,
                 'title_id' => 1,
-                'type_section_landing' => 1,
+                'type_section_landing_id' => 1,
                 'button_id' => 1,
-                'subtitle_button_id' => 1,
-                'background_color' => null
+                'sub_title_button_id' => 1,
+                'background_color' => ''
             ],
             [
                 'description_id' => 2,
                 'title_id' => 2,
-                'type_section_landing' => 1,
+                'type_section_landing_id' => 1,
                 'button_id' => 1,
-                'subtitle_button_id' => 1,
-                'background_color' => null
+                'sub_title_button_id' => 1,
+                'background_color' => ''
             ],
             [
                 'description_id' => 3,
                 'title_id' => 3,
-                'type_section_landing' => 2,
+                'type_section_landing_id' => 2,
                 'button_id' => 1,
-                'subtitle_button_id' => 1,
-                'background_color' => null
+                'sub_title_button_id' => 1,
+                'background_color' => ''
             ]
         ];
 
