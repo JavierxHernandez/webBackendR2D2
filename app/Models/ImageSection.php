@@ -11,6 +11,8 @@ class ImageSection extends Model
     use HasFactory;
     use SoftDeletes;
 
+    protected $table = 'images_sections';
+
     protected $fillable = [
         'image_id',
         'section_id'
