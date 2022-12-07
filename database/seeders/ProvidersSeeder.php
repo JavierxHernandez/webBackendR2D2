@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Auxs\SeederFunction;
+use App\Models\Provider;
 use Illuminate\Database\Seeder;
 
 class ProvidersSeeder extends Seeder
@@ -14,6 +15,11 @@ class ProvidersSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $providers = [
+            ['name' => 'mx.claro.tiaxa'],
+            ['name' => 'ar.claro.tiaxa'],
+        ];
+
+        SeederFunction::seed(Provider::class, $providers);
     }
 }

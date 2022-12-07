@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Auxs\SeederFunction;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 
 class ProductsSeeder extends Seeder
@@ -14,6 +15,11 @@ class ProductsSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $products = [
+            ['name' => 'planeta guru', 'url' => 'https://planeta.guru/'],
+            ['name' => 'clarovr', 'url' => 'https://clarovr.com/'],
+        ];
+
+        SeederFunction::seed(Product::class, $products);
     }
 }

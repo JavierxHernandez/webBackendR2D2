@@ -4,17 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ImageSection extends Model
+class ImageType extends Model
 {
     use HasFactory;
-    use SoftDeletes;
-
-    protected $table = 'images_sections';
 
     protected $fillable = [
-        'image_id',
-        'section_id'
+        'name'
     ];
+
+    public function images()
+    {
+        return $this->hasMany(Image::class);
+    }
 }
